@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策</title>
+  <style>
+    :root { --ink: #2c3e50; --paper: #FDFBF7; --red-apricot: #E53935; }
+    body { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif; background: var(--paper); color: var(--ink); margin: 0; padding: 0; line-height: 1.6; }
+    .wobbly-border { border: 2px solid var(--ink); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; }
+    .wobbly-btn { display: inline-block; padding: 10px 20px; color: var(--ink); text-decoration: none; font-weight: bold; background: transparent; border: 2px solid var(--ink); border-radius: 15px 225px 15px 255px/255px 15px 225px 15px; box-shadow: 4px 4px 0px var(--red-apricot); transition: all 0.2s; cursor: pointer; }
+    .wobbly-btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0px var(--red-apricot); }
+    .btn-filled { background: var(--red-apricot); color: #fff; box-shadow: 4px 4px 0px var(--ink); border-color: var(--ink); }
+    .btn-filled:hover { color: #fff; box-shadow: 2px 2px 0px var(--ink); }
+    
+    header { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px dashed var(--ink); position: sticky; top: 0; background: var(--paper); z-index: 100; }
+    .logo { font-size: 1.8rem; font-weight: bold; display: flex; align-items: center; gap: 10px; color: var(--red-apricot); }
+    .logo svg { width: 35px; height: 35px; stroke: var(--red-apricot); stroke-width: 2; fill: none; }
+    
+    .header-nav { display: flex; align-items: center; gap: 30px; }
+    .nav-links { display: flex; gap: 20px; }
+    .nav-links a { color: var(--ink); font-weight: bold; text-decoration: none; border-bottom: 2px dashed transparent; transition: all 0.2s; }
+    .nav-links a:hover { border-bottom: 2px dashed var(--red-apricot); color: var(--red-apricot); }
+    
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    .hero { text-align: center; margin-bottom: 80px; padding-top: 40px; }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 20px; position: relative; display: inline-block; }
+    .hero h1::after { content: ""; position: absolute; bottom: 5px; left: 0; width: 100%; height: 10px; background: rgba(229, 57, 53, 0.2); z-index: -1; transform: rotate(-1deg); }
+    .hero-actions { display: flex; gap: 20px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
+    
+    .section-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; scroll-margin-top: 100px; }
+    
+    .masonry { column-count: 3; column-gap: 30px; margin-bottom: 80px; }
+    .masonry-card { break-inside: avoid; background: #fff; padding: 25px; margin-bottom: 30px; position: relative; }
+    .masonry-card h3 { color: var(--red-apricot); font-size: 1.3rem; margin-top: 0; }
+    .icon-sketch { width: 40px; height: 40px; stroke: var(--ink); stroke-width: 1.5; fill: none; margin-bottom: 15px; }
+    
+    .pricing { display: flex; gap: 30px; margin-bottom: 80px; }
+    .price-card { flex: 1; padding: 30px; text-align: center; background: #fff; display: flex; flex-direction: column; }
+    .price-card.featured { transform: scale(1.05); background: #FFF9C4; }
+    .price { font-size: 2.5rem; color: var(--red-apricot); font-weight: bold; margin: 20px 0; }
+    ul.sketch-list { list-style: none; padding: 0; text-align: left; margin-bottom: 30px; flex-grow: 1; }
+    ul.sketch-list li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+    ul.sketch-list li::before { content: "»"; position: absolute; left: 0; color: var(--red-apricot); font-weight: bold; }
+    
+    .faq-list, .testi-list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 80px; }
+    .testi-card { font-style: italic; }
+    .testi-author { font-weight: bold; color: var(--red-apricot); font-style: normal; text-align: right; margin-top: 10px; }
+    
+    footer { border-top: 2px dashed var(--ink); padding: 40px 20px; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-links a { color: var(--ink); text-decoration: none; text-decoration-style: dashed; }
+    
+    @media (max-width: 768px) {
+      .masonry { column-count: 1; }
+      .pricing { flex-direction: column; }
+      .price-card.featured { transform: none; }
+      .hero h1 { font-size: 2.5rem; }
+      .nav-links { display: none; }
+    }
+  
+
+    /* SEO Links Customization */
+    .seo-content a { color: var(--red-apricot) !important; text-decoration: none; font-weight: bold; transition: opacity 0.3s; }
+    .seo-content a:visited { color: var(--red-apricot) !important; }
+    .seo-content a:hover { opacity: 0.7; }
+    .seo-content h1, .seo-content h2, .seo-content h3 { margin-top: 1.5em; margin-bottom: 0.5em; }
+    .seo-content p { margin-bottom: 1.5em; font-size: 1.1rem; line-height: 1.8; }
+    .seo-content ul { margin-bottom: 1.5em; line-height: 1.8; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+  
+  <header>
+    <a href="index.html" class="logo" style="text-decoration: none;">
+      <svg viewBox="0 0 100 100">
+        <path d="M20,80 Q40,60 50,50 T80,20 M50,50 Q60,30 40,20 Q30,40 50,50 M60,60 Q80,70 90,50 Q70,40 60,60" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="45" cy="35" r="5" fill="var(--red-apricot)"/>
+        <circle cx="75" cy="55" r="4" fill="var(--red-apricot)"/>
+      </svg>
+      红杏云
+    </a>
+    <div class="header-nav">
+      <nav class="nav-links">
+        <a href="#features">优势</a>
+        <a href="#streaming">流媒体/AI</a>
+        <a href="#pricing">方案</a>
+        <a href="#faq">FAQ</a>
+        <a href="#testimonials">评价</a>
+        <a href="apricot-talks.html">杏林漫谈</a>
+      </nav>
+      <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="wobbly-btn btn-filled" rel="nofollow" target="_blank" style="padding: 8px 15px; font-size: 0.9rem;">获取连接</a>
+    </div>
+  </header>
+  <div class="container masonry-card wobbly-border" style="background: #fff; padding: 50px; margin-top: 40px; margin-bottom: 80px; max-width: 900px;">
+    <div class="seo-content">
+      <h1 style="font-size: 2.5rem; margin-bottom: 30px;">隐私政策</h1>
+      <h2>无日志政策</h2><p>我们绝不记录、收集或存储您的网络活动日志。您的轨迹属于您自己。</p><h2>信息收集</h2><p>仅收集注册邮箱及总体流量统计以维持服务运行。</p>
+    </div>
+  </div>
+</body>
+</html>

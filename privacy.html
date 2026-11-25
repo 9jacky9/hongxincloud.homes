@@ -67,7 +67,24 @@
     .seo-content h1, .seo-content h2, .seo-content h3 { margin-top: 1.5em; margin-bottom: 0.5em; }
     .seo-content p { margin-bottom: 1.5em; font-size: 1.1rem; line-height: 1.8; }
     .seo-content ul { margin-bottom: 1.5em; line-height: 1.8; font-size: 1.1rem; }
-    </style>
+    
+    /* Keep auxiliary-page navigation usable on narrow screens. */
+    header { gap: 16px; }
+    header .logo { flex-shrink: 0; white-space: nowrap; }
+    .header-nav { min-width: 0; }
+    .header-nav > .wobbly-btn { flex-shrink: 0; white-space: nowrap; }
+    @media (max-width: 1100px) {
+      header { flex-wrap: wrap; }
+      .header-nav { width: 100%; flex-wrap: wrap; gap: 12px; }
+      .header-nav .nav-links { display: flex; width: 100%; min-width: 0; overflow-x: auto; white-space: nowrap; order: 2; padding: 4px 0; }
+      .header-nav .nav-links a { flex-shrink: 0; }
+    }
+    @media (max-width: 480px) {
+      header { padding: 12px 16px; }
+      body > .container { box-sizing: border-box; width: calc(100% - 24px); padding: 24px 20px !important; margin-top: 24px !important; }
+      .seo-content { overflow-wrap: anywhere; }
+    }
+</style>
   <link rel="canonical" href="https://hongxincloud.homes/privacy.html">
 </head>
 <body>
@@ -83,20 +100,20 @@
     </a>
     <div class="header-nav">
       <nav class="nav-links">
-        <a href="#features">优势</a>
-        <a href="#streaming">流媒体/AI</a>
-        <a href="#pricing">方案</a>
-        <a href="#faq">FAQ</a>
-        <a href="#testimonials">评价</a>
+        <a href="index.html#features">优势</a>
+        <a href="index.html#streaming">流媒体/AI</a>
+        <a href="index.html#pricing">方案</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#testimonials">评价</a>
         <a href="apricot-talks.html">杏林漫谈</a>
       </nav>
-      <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="wobbly-btn btn-filled" rel="nofollow" target="_blank" style="padding: 8px 15px; font-size: 0.9rem;">获取连接</a>
+      <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="wobbly-btn btn-filled" rel="nofollow sponsored noopener" target="_blank" style="padding: 8px 15px; font-size: 0.9rem;">前往选购平台</a>
     </div>
   </header>
   <div class="container masonry-card wobbly-border" style="background: #fff; padding: 50px; margin-top: 40px; margin-bottom: 80px; max-width: 900px;">
     <div class="seo-content">
       <h1 style="font-size: 2.5rem; margin-bottom: 30px;">隐私政策</h1>
-      <h2>无日志政策</h2><p>我们绝不记录、收集或存储您的网络活动日志。您的轨迹属于您自己。</p><h2>信息收集</h2><p>仅收集注册邮箱及总体流量统计以维持服务运行。</p>
+      <p>本政策仅说明本站（hongxincloud.homes）页面本身如何处理访客信息。本站不是网络加速服务的提供方，不对第三方平台的隐私做法作任何承诺。</p><h2>本站不主动收集的内容</h2><p>本页及首页提供信息与外部链接，没有注册、登录、评论或支付表单；这些页面的源码未包含自有统计脚本或主动设置 Cookie 的代码。购买所需的账号与付款信息应在实际服务方页面填写。</p><h2>托管与网络服务</h2><p>本站由第三方托管和网络服务商提供访问。这些服务商可能按其自身政策记录访问时间、IP 地址、浏览器类型等常规信息，本站无法控制，也不保证这些服务不留存任何记录。</p><h2>点击第三方链接之后</h2><p>点击推广入口后将进入第三方平台。该平台及推广系统可能通过链接中的推广标识、Cookie 等方式识别来源，并记录注册、购买和佣金结算信息。推广方可能向本站运营方提供注册数量、佣金等汇总结算信息。这些信息受第三方各自政策约束，本站不控制，也不承诺其“零日志”或类似做法。请在注册或付款前阅读对方的隐私政策。</p><h2>政策更新</h2><p>如页面功能或实际做法发生变化，本站会更新本页。</p><p>最后更新：2026-11-25</p>
     </div>
   </div>
 </body>

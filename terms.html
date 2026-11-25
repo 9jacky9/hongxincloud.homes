@@ -67,7 +67,24 @@
     .seo-content h1, .seo-content h2, .seo-content h3 { margin-top: 1.5em; margin-bottom: 0.5em; }
     .seo-content p { margin-bottom: 1.5em; font-size: 1.1rem; line-height: 1.8; }
     .seo-content ul { margin-bottom: 1.5em; line-height: 1.8; font-size: 1.1rem; }
-    </style>
+    
+    /* Keep auxiliary-page navigation usable on narrow screens. */
+    header { gap: 16px; }
+    header .logo { flex-shrink: 0; white-space: nowrap; }
+    .header-nav { min-width: 0; }
+    .header-nav > .wobbly-btn { flex-shrink: 0; white-space: nowrap; }
+    @media (max-width: 1100px) {
+      header { flex-wrap: wrap; }
+      .header-nav { width: 100%; flex-wrap: wrap; gap: 12px; }
+      .header-nav .nav-links { display: flex; width: 100%; min-width: 0; overflow-x: auto; white-space: nowrap; order: 2; padding: 4px 0; }
+      .header-nav .nav-links a { flex-shrink: 0; }
+    }
+    @media (max-width: 480px) {
+      header { padding: 12px 16px; }
+      body > .container { box-sizing: border-box; width: calc(100% - 24px); padding: 24px 20px !important; margin-top: 24px !important; }
+      .seo-content { overflow-wrap: anywhere; }
+    }
+</style>
   <link rel="canonical" href="https://hongxincloud.homes/terms.html">
 </head>
 <body>
@@ -83,20 +100,20 @@
     </a>
     <div class="header-nav">
       <nav class="nav-links">
-        <a href="#features">优势</a>
-        <a href="#streaming">流媒体/AI</a>
-        <a href="#pricing">方案</a>
-        <a href="#faq">FAQ</a>
-        <a href="#testimonials">评价</a>
+        <a href="index.html#features">优势</a>
+        <a href="index.html#streaming">流媒体/AI</a>
+        <a href="index.html#pricing">方案</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#testimonials">评价</a>
         <a href="apricot-talks.html">杏林漫谈</a>
       </nav>
-      <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="wobbly-btn btn-filled" rel="nofollow" target="_blank" style="padding: 8px 15px; font-size: 0.9rem;">获取连接</a>
+      <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="wobbly-btn btn-filled" rel="nofollow sponsored noopener" target="_blank" style="padding: 8px 15px; font-size: 0.9rem;">前往选购平台</a>
     </div>
   </header>
   <div class="container masonry-card wobbly-border" style="background: #fff; padding: 50px; margin-top: 40px; margin-bottom: 80px; max-width: 900px;">
     <div class="seo-content">
       <h1 style="font-size: 2.5rem; margin-bottom: 30px;">服务条款</h1>
-      <h2>禁止的活动</h2><p>禁止从事任何违反法律法规的活动，包括但不限于发垃圾邮件、网络攻击、BT下载、滥发广告等。</p><h2>免责声明</h2><p>本服务仅作数据传输通道，不对不可抗力导致的中断负责。</p>
+      <p>本条款适用于您浏览和使用本站（hongxincloud.homes）的页面内容。本站不提供网络加速服务，不出售套餐，也不与您订立任何网络服务合同。</p><h2>第三方服务与条款</h2><p>您通过本站链接前往的第三方平台，其服务内容、价格、使用限制、退款、售后与使用条款，均以该平台公布的内容为准。本站不替第三方制定条款，也不作任何服务质量、可用性或退款承诺。</p><h2>信息仅供参考</h2><p>本站内容仅为购买前的核对参考，不构成购买建议或服务保证。价格和套餐条件可能随时变化，请在付款前向服务方核实。</p><h2>合规使用</h2><p>请遵守您所在地的法律法规及第三方平台的使用规则，并自行判断网络服务在您所在地区的适用性。</p><h2>推广披露与售后联系</h2><p>本站可能通过推广链接获得佣金，是否影响您在第三方平台的实际价格，以该平台页面显示为准。如遇扣费、退款或服务争议，请保留订单与付款记录，联系实际收款方处理。</p><p>最后更新：2026-11-25</p>
     </div>
   </div>
 </body>
